@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/react.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>多维分析</title>
+    <script
+    crossorigin="anonymous"
+    src="https://gw.alipayobjects.com/os/lib??react/16.13.1/umd/react.development.js,react-dom/16.13.1/umd/react-dom.development.js,react-router-dom/5.3.3/umd/react-router-dom.js,moment/2.29.1/min/moment.min.js"
+    ></script>
+    <script src="https://gw.alipayobjects.com/os/lib??lodash/4.17.21/lodash.min.js"></script>
+    <script crossorigin="anonymous" src="//alifd.alicdn.com/npm/@alifd/next/1.26.2/next.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/lib??axios/0.24.0/dist/axios.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/lib/antv/g2/4.2.9/dist/g2.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/lib/antv/data-set/0.11.8/dist/data-set.js"></script>
+    <script src="https://gw.alipayobjects.com/os/lib/bizcharts/4.1.22/umd/BizCharts.min.js"></script>
+  </head>
+  <body style="background-color: #f5f7fa;">
+    <div style="width: 100%;height:52px;background-color:white;">header</div>
+    <div id="root" style="padding: 24px;"></div>
+    <script type="text/javascript">
+      window.pid = '<%= pid %>';
+      window.__INITIAL_STATE__ = <%- state %>;
+    </script>
+  </body>
+</html>

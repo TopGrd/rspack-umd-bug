@@ -1,0 +1,45 @@
+{
+  "name": "test-bug",
+  "version": "1.0.58",
+  "description": "AEM 中的多维分析组件",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "rspack serve",
+    "dev": "rspack serve",
+    "build": "rspack build",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "prepublishOnly": "npm run build"
+  },
+  "main": "dist/aes-cube-analytic.min.js",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "latest",
+    "@rspack/plugin-node-polyfill": "latest",
+    "@rspack/plugin-minify": "^0.1.12",
+    "@types/react": "^16.3.0",
+    "@types/react-dom": "^16.3.0",
+    "@umijs/fabric": "^4.0.1",
+    "eslint": "^7.30.0",
+    "fs-extra": "^11.1.1",
+    "postcss": "^8.4.26",
+    "postcss-discard-duplicates": "^6.0.0",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "typescript": "^5.0.4",
+    "yargs-parser": "^21.1.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.antfin-inc.com"
+  },
+  "repository": "git@gitlab.alibaba-inc.com:aes/aes-cube-analytic.git",
+  "resolutions": {
+    "@types/react": "^16.12.0",
+    "@types/react-dom": "^16"
+  }
+}
